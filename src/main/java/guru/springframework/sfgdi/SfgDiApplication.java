@@ -14,6 +14,7 @@ public class SfgDiApplication {
 
 	public static void main(String[] args) {
 
+		//git push
 		ApplicationContext context = SpringApplication.run(SfgDiApplication.class, args);
 
 		PetController petController = (PetController) context.getBean("petController");
@@ -53,8 +54,6 @@ public class SfgDiApplication {
 		System.out.println(prototypeBean1.getMyScope());
 		PrototypeBean prototypeBean2 = context.getBean(PrototypeBean.class);
 		System.out.println(prototypeBean2.getMyScope());
-
-
 	}
 
 }
